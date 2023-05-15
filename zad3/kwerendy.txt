@@ -1,0 +1,3 @@
+SELECT `marka`,`rocznik` FROM `samochody` WHERE `kolor` = "niebieski";
+select COUNT(`marka`) FROM `samochody` WHERE `marka` = "Toyota" OR"Opel" AND `stan` = "bardzo dobry";
+UPDATE samochody SET stan="dobry" WHERE `rocznik` <2004;
