@@ -1,0 +1,50 @@
+*{
+    font-family: Tahoma;
+}
+.hprawy , .hlewy{
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+.hlewy{
+    width: 70%;
+    float: left;
+}
+.hprawy{
+    width: 30%;
+    float: left;
+}
+.alewy{
+   background-color:#26a69a;
+   height: 550px;
+   width: 30%;
+   float: left;
+}
+.aprawy{
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: left;
+
+}
+footer{
+    background-color: #003d33;
+    color: white;
+}
+#wizytówka{
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px  #003d33;
+}
+#przyciskwiz{
+    background-color:  #003d33;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-collapse: collapse;
+}
+#przyciskwiz:hover{
+    background-color: #004c40;
+}
