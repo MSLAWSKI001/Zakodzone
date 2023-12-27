@@ -1,0 +1,47 @@
+*{
+    font-family: Georgia;
+    margin: 0px;
+}
+table,td,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: chartreuse;
+}
+table{
+    margin: 10px;
+}
+td:hover{
+   background-color:yellow;
+}
+header,footer{
+    text-align: center;
+    background-color: blueviolet;
+    height: 10%;
+    clear: both;
+}
+.lewy, .prawy{
+    background-color: rgb(226, 72, 226);
+    height: 600px;
+    float: left;
+    width: 30%;
+}
+.prawy{
+    text-align: center;
+}
+.glowny{
+    background-color: rgb(237, 226, 228);
+    height: 600px;
+    float: left;
+    width: 40%;
+    text-align: center;
+    
+}
+button{
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
