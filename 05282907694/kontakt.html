@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komputery</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div id="kontener">
+        <header>
+            <img src="animacja.gif" alt="Pogotowie Komputerowe">
+        </header>
+
+        <section id="menu">
+            <a href="index.html">Strona Główna</a>
+            <a href="kontakt.html">Kontakt</a>
+        </section>
+
+        <section id="glowny1"></section>
+
+        <section id="glowny2">
+            <h2>Kontakt</h2>
+
+            <form action="main.js">
+                <tr>
+                    <td>Imię: </td>
+                    <td><input type="text" value="imie" id="imie"></td><br>
+                </tr>
+
+                <tr>
+                    <td>Nazwisko: </td>
+                    <td><input type="text" value="nazwisko" id="nazwisko"></td><br>
+                </tr>
+
+                <tr>
+                    <td>E-mail: </td>
+                    <td><input type="email" value="email" id="email"></td><br>
+                </tr>
+
+                <tr>
+                    <td>Zgłoszenie: </td>
+                    <td>
+                        <select name="wybor" id="wybor">
+                            <option value="naprawa">Naprawa Komputerów</option>
+                            <option value="odzyskiwanie">Odzyskiwanie Danych</option>
+                            <option value="wirusy">Wirusy</option>
+                            <option value="konfiguracja">Konfiguracja LAN</option>
+                        </select><br>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td>
+                        <form action="">
+                            <label for=""> 
+                                
+                            <input type="checkbox">
+                            Wyślij kopie wiadmości
+                            </label>
+                        </form>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> </td>
+                    <td>
+                        <button type="reset">Czyść</button>
+                        <button type="submit" onclick="main.js">Wyślij</button>
+                    </td>
+                </tr>
+
+                <p><script>element.innerHTML(wynik)</script></p>
+            </section>
+        </form>
+
+        <section id="glowny3"></section>
+
+        <footer>
+            Autor: 05282907694
+        </footer>
+    </div>
+</body>
+</html>
