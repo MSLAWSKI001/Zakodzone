@@ -1,0 +1,17 @@
+import React from 'react';
+
+function Zadanie({ zadanie, oznaczUkonczone, usunZadanie }) {
+  return (
+    <li>
+      <span
+        style={{ textDecoration: zadanie.ukonczone ? 'line-through' : 'none' }}
+        onClick={() => oznaczUkonczone(zadanie.id)}
+      >
+        {zadanie.text}
+      </span>
+      <button onClick={() => usunZadanie(zadanie.id)}>Usuń</button>
+    </li>
+  );
+}
+
+export default Zadanie;
