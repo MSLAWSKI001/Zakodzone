@@ -1,0 +1,7 @@
+const oznaczUkonczone = (id) => {
+    setZadania(
+      zadania.map(zadanie =>
+        zadanie.id === id ? { ...zadanie, ukonczone: !zadanie.ukonczone } : zadanie
+      )
+    );
+  };
