@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+
+public class MusicInfo
+{
+    public string Artist { get; set; }
+    public string Album { get; set; }
+    public int NumberOfSongs { get; set; }
+    public int Year { get; set; }
+    public int Downloads { get; set; }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        string filePath = "data.txt"; // Upewnij się, że plik jest w odpowiedniej ścieżce
+        List<MusicInfo> musicCollection = LoadMusicData(filePath);
+
+        // Wyświetl załadowane dane
+        foreach (var musicInfo in musicCollection)
+        {
+            Console.WriteLine($"Artist: {musicInfo.Artist}, Album: {musicInfo.Album}, Number of Songs: {musicInfo.NumberOfSongs}, " +
+                              $"Year: {musicInfo.Year}, Downloads: {musicInfo.Downloads}");
+        }
+    }
+
+    public static List<MusicInfo> LoadMusicData(string filePath)
+    {
+        List<MusicInfo> musicCollection = new List<MusicInfo>();
+
+        using (StreamReader reader = new StreamReader(filePath))
+        {
+            while (!reader.EndOfStream)
+            {
+                // Wczytywanie bloków danych
